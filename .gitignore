@@ -1,0 +1,19 @@
+# 运行与系统生成文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+npm-debug.log*
+
+# 本地测试与构建产物
+qa-*.png
+*.log
+.publish-check/
+dist/

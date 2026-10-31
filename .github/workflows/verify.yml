@@ -1,0 +1,56 @@
+name: Build & Verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check JavaScript syntax
+        run: |
+          for f in js/*.js scripts/*.js; do
+            echo "checking $f"
+            node --check "$f"
+          done
+
+      - name: Verify bgm manifest is up to date
+        run: |
+          node scripts/build-bgm-manifest.js
+          git diff --exit-code js/audio-manifest.js || (
+            echo "::error::js/audio-manifest.js 与 assets/bgm/ 不一致，请运行 npm run build:bgm 后提交"
+            exit 1
+          )
+
+      - name: Verify required assets exist
+        run: |
+          python3 - <<'PY'
+          import pathlib, sys
+          root = pathlib.Path('.')
+          required = ['index.html', 'css/style.css', 'js/game.js', 'js/ai.js', 'js/board-core.js',
+                      'js/effects.js', 'js/audio-manifest.js', 'assets/images/board-bg.png']
+          for s in ['fire', 'water', 'forest', 'storm']:
+              for g in ['young', 'adult']:
+                  required.append(f'assets/images/{s}-{g}.png')
+          for a in ['place-young', 'place-adult', 'push', 'dice', 'evolve', 'victory']:
+              required.append(f'assets/audio/{a}.wav')
+          missing = [f for f in required if not (root / f).exists()]
+          if missing:
+              print('缺少文件:', missing)
+              sys.exit(1)
+          print(f'资源检查通过，共 {len(required)} 个关键文件')
+          PY
