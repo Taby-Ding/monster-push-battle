@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/home.png" alt="怪兽推推战 主界面" width="820">
+<img src="docs/home.webp" alt="怪兽推推战 主界面" width="820">
 
 # 怪兽推推战 · Monster Push Battle
 
@@ -8,7 +8,7 @@
 
 落子会推开周围的棋子，幼年体三连进化为成年体，三只成年体连成一线即获胜。
 
-<img src="assets/images/og-cover.png" alt="怪兽推推战 · 推开对手，进化怪兽，三连制胜" width="100%">
+<img src="assets/images/og-cover.jpg" alt="怪兽推推战 · 推开对手，进化怪兽，三连制胜" width="100%">
 
 [▶ 在线试玩](https://taby-ding.github.io/monster-push-battle/)　·　[游戏规则](#游戏规则)　·　[本地运行](#本地运行)　·　[项目结构](#项目结构)
 

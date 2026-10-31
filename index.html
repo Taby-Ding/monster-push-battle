@@ -7,12 +7,15 @@
   <meta name="description" content="怪兽推推战是一款 6×6 推挤式三连棋：落子会推开周围棋子，幼年体三连进化，成年体三连获胜。支持双人对战与三档难度 AI。">
   <meta name="theme-color" content="#12171c">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/images/fire-young.png">
+  <link rel="apple-touch-icon" href="assets/images/fire-young.webp">
+  <link rel="preload" as="image" href="assets/images/board-bg.webp" fetchpriority="high">
   <link rel="stylesheet" href="css/style.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="怪兽推推战 · 推挤进化三连棋">
   <meta property="og:description" content="推开对手，进化怪兽，三连制胜。支持双人对战与三档难度 AI。">
-  <meta property="og:image" content="assets/images/og-cover.png">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="怪兽推推战">
   <meta name="twitter:description" content="推开对手，进化怪兽，三连制胜。">
@@ -51,7 +54,7 @@
 
   <div id="victory" class="victory hidden"><canvas id="confetti"></canvas><div class="victory-card"><div id="winnerPortrait" class="winner-portrait"></div><p>领地征服者</p><h2 id="winnerTitle">玩家获胜</h2><div id="winnerStats"></div><button id="againBtn" class="primary">再战一局</button></div></div>
 
-  <audio id="sfxYoung" src="assets/audio/place-young.wav"></audio><audio id="sfxAdult" src="assets/audio/place-adult.wav"></audio><audio id="sfxPush" src="assets/audio/push.wav"></audio><audio id="sfxDice" src="assets/audio/dice.wav"></audio><audio id="sfxEvolve" src="assets/audio/evolve.wav"></audio><audio id="sfxVictory" src="assets/audio/victory.wav"></audio><audio id="bgm" src="assets/bgm/领地低语.wav" loop></audio>
+  <audio id="sfxYoung" src="assets/audio/place-young.wav"></audio><audio id="sfxAdult" src="assets/audio/place-adult.wav"></audio><audio id="sfxPush" src="assets/audio/push.wav"></audio><audio id="sfxDice" src="assets/audio/dice.wav"></audio><audio id="sfxEvolve" src="assets/audio/evolve.wav"></audio><audio id="sfxVictory" src="assets/audio/victory.wav"></audio><audio id="bgm" preload="none" loop></audio>
   <script src="js/audio-manifest.js"></script>
   <script src="js/board-core.js"></script>
   <script src="js/ai.js"></script>
