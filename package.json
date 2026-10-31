@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "怪兽推推战 —— 6×6 推挤式三连棋，支持双人对战与三档难度 AI",
+  "author": "Taby-Ding <tabyding@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "build:bgm": "node scripts/build-bgm-manifest.js",
     "start": "python3 -m http.server 8080",
     "check": "node --check js/game.js && node --check js/ai.js && node --check js/board-core.js && node --check js/effects.js"
   },
-  "keywords": ["board-game", "html5", "canvas", "game", "ai", "github-pages"],
-  "license": "MIT"
+  "keywords": ["board-game", "html5", "canvas", "game", "ai", "github-pages"]
 }

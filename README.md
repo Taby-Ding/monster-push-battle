@@ -146,7 +146,7 @@ npm run build:bgm
 │   ├── pages.yml               # 自动部署到 GitHub Pages
 │   └── verify.yml              # 语法、清单与资源检查
 ├── .nojekyll                   # 关闭 Jekyll 处理
-└── LICENSE                     # MIT
+└── LICENSE                     # PolyForm Noncommercial 1.0.0
 ```
 
 ## 常见问题
@@ -164,8 +164,34 @@ npm run build:bgm
 
 欢迎提交 Issue 与 Pull Request。开始前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
+提交贡献即视为同意：贡献内容授权 Taby-Ding 在本项目及其商业授权版本中无偿使用，且本项目仅限非商业用途。
+
 ## 许可
 
-代码以 [MIT License](LICENSE) 开源。
+本项目采用 **[PolyForm Noncommercial 1.0.0](LICENSE)** 协议，版权归 **Taby-Ding** 所有。
 
-怪兽棋子与棋盘插画为本项目生成的原创素材，随项目一同以 MIT 协议提供；如需商用请自行确认素材合规性。
+### 可以做的
+
+- ✅ 个人学习、研究、娱乐，自己玩或和朋友一起玩
+- ✅ 阅读、修改源码，用于非商业目的
+- ✅ 在非商业场合分享、转载（保留版权声明与协议文件）
+- ✅ 学校、公益机构、公共研究机构等非营利组织使用
+
+### 不可以做的
+
+- ❌ 出售本项目或任何包含本项目代码的产品
+- ❌ 嵌入付费产品、订阅服务、广告变现的站点
+- ❌ 公司内部使用或作为商业项目的一部分
+- ❌ 以本项目为基础承接商业外包或提供收费服务
+
+### 商业授权
+
+如需商业使用，请先取得书面授权：
+
+**联系方式：tabyding@gmail.com**
+
+### 素材说明
+
+怪兽棋子、棋盘与分享图为本项目自行生成的原创素材，随代码一同受本协议约束，不可单独用于商业用途。
+
+完整条款见 [LICENSE](LICENSE) 文件，官方原文：<https://polyformproject.org/licenses/noncommercial/1.0.0>。
