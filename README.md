@@ -10,11 +10,9 @@
 
 <img src="assets/images/og-cover.png" alt="怪兽推推战 · 推开对手，进化怪兽，三连制胜" width="100%">
 
-[▶ 在线试玩](https://YOUR-USERNAME.github.io/monster-push-battle/)　·　[游戏规则](#游戏规则)　·　[本地运行](#本地运行)　·　[项目结构](#项目结构)
+[▶ 在线试玩](https://taby-ding.github.io/monster-push-battle/)　·　[游戏规则](#游戏规则)　·　[本地运行](#本地运行)　·　[项目结构](#项目结构)
 
 </div>
-
-> 把上面的 `YOUR-USERNAME` 换成你的 GitHub 用户名，部署完成后链接即可使用。
 
 ---
 
